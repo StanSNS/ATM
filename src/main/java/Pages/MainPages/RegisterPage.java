@@ -254,8 +254,9 @@ public class RegisterPage {
         boolean dobFieldIsValid = !dobField.getText().trim().isEmpty() && dobField.getText().matches("(3[01]|[1-2]\\d|0?[1-9])/(1[0-2]|0?[1-9])/((\\d{2})?\\d{2})");
         boolean pinFieldIsValid = !pinField.getText().trim().isEmpty() && pinField.getText().matches("\\d*");
         boolean confirmPINFieldIsValid = !confirmPINField.getText().trim().isEmpty() && confirmPINField.getText().equals(pinField.getText());
+        boolean checkIfEmailExists = StartPage.collection.countDocuments(new Document("Email", emailField.getText())) > 0;
 
-        if (firstNameFieldIsValid && lastNameFieldIsValid && emailFieldIsValid && dobFieldIsValid && pinFieldIsValid && confirmPINFieldIsValid) {
+        if (firstNameFieldIsValid && lastNameFieldIsValid && emailFieldIsValid && dobFieldIsValid && pinFieldIsValid && confirmPINFieldIsValid && !checkIfEmailExists) {
             Document registeredClient = new Document();
             registeredClient.append("First Name", firstNameField.getText());
             registeredClient.append("Last Name", lastNameField.getText());
