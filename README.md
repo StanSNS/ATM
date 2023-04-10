@@ -33,6 +33,10 @@ To access the images, you have two options.
 You can choose which method to use based on your preferences and requirements for accessing the images. 
 (Comment and Uncomment the constructor in Images(Folder) -> IMG class)
 
+[Start the program]
+You need to have MongoDB and replace the String located in
+Pages -> Main Pages -> StartPage.class 23rd line with your String connector. Keep in mind that if you try to launch the program without changing the row you won't be able to close it.
+
 [Conclusion]
 This Java ATM project utilizes MongoDB and AWS S3 to provide a secure and scalable banking application.
 The application is designed to handle common banking tasks and can be easily extended to include additional functionality.
