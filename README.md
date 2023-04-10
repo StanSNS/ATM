@@ -1,3 +1,6 @@
+[ATM Demo - How it works] {3 Min}
+https://www.youtube.com/watch?v=MqsNHeupuuI&ab_channel=%D0%A1%D1%82%D0%B0%D0%BD%D0%B8%D0%BC%D0%B8%D1%80%D0%A1%D0%B5%D1%80%D0%B3%D0%B5%D0%B2
+
 [Introduction]
 This documentation provides an overview of a Java ATM project that utilizes the MongoDB database to store user information and the AWS S3 database to store all images and backgrounds.
 The project is designed to simulate an Automated Teller Machine (ATM) and allows users to perform common banking tasks such as:
